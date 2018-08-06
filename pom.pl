@@ -20,9 +20,12 @@ foreach(1..$break) {
     sleep 1;
     print "\b";
 }
-print "\nWell done!";
-#
-#
-#for (my $i = 9; $i >= 0; sleep 1 and $i--) {
-    #printf "$i...";
-#}
+print "\nWell done!\n";
+
+for (my $i = $break; $i >= 0; $i--) {
+    print "$spinState[$_%@spinState]";
+    sleep 1;
+    print "\b";
+    #sleep 1;
+    #print "$i...";
+}
