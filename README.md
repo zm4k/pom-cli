@@ -1,2 +1,2 @@
 # pom.pl
-Pomodoro timer for the command line
+Simple Pomodoro timer for the command line.
