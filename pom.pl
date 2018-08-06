@@ -21,3 +21,8 @@ foreach(1..$break) {
     print "\b";
 }
 print "\nWell done!";
+#
+#
+#for (my $i = 9; $i >= 0; sleep 1 and $i--) {
+    #printf "$i...";
+#}
