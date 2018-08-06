@@ -3,29 +3,28 @@ use strict;
 use warnings;
 
 $| = 1;
-my $spinner;
-my @spinState = ("-", "\\", "|", "/");
-my $pom = 12;
+my @spin = ("-", "\\", "|", "/");
+my $pom = 4;
 my $break = 4;
 
 print "Working: ";
 foreach(1..$pom) {
-    print "$spinState[$_%@spinState]";
+    print "$spin[$_%@spin]";
     sleep 1;
     print "\b";
 }
 print "\nBreak: ";
 foreach(1..$break) {
-    print "$spinState[$_%@spinState]";
+    print "$spin[$_%@spin]";
     sleep 1;
     print "\b";
 }
 print "\nWell done!\n";
 
-for (my $i = $break; $i >= 0; $i--) {
-    print "$spinState[$_%@spinState]";
-    sleep 1;
-    print "\b";
+for (my $i = $break; $i >= 0; $i-- and sleep 1) {
+    #print "$spin[$_%@spin]";
     #sleep 1;
-    #print "$i...";
+    #print "\b";
+    print "$i...";
 }
+print "\nBye!";
