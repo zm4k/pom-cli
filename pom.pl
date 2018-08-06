@@ -21,10 +21,10 @@ foreach(1..$break) {
 }
 print "\nWell done!\n";
 
-for (my $i = $break; $i >= 0; $i-- and sleep 1) {
+for ($break; $break >= 0; $break-- and sleep 1) {
     #print "$spin[$_%@spin]";
     #sleep 1;
     #print "\b";
-    print "$i...";
+    print "$break...";
 }
 print "\nBye!";
